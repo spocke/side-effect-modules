@@ -1,4 +1,3 @@
-import { foo } from './main';
-// import './effect';
+import { foo } from 'foobar';
 
 foo();

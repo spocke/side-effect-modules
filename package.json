@@ -2,10 +2,15 @@
   "name": "test-pure-modules",
   "version": "1.0.0",
   "scripts": {
-    "build": "esbuild src/app.js --bundle --outfile=lib/out.js | cat lib/out.js"
+    "build": "mkdir -p lib && esbuild src/app.js --bundle --outfile=lib/out.js && cat lib/out.js"
   },
-  "sideEffects": ["./src/effect.js"],
-  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "foobar": "^1.0.0"
+  },
   "devDependencies": {
     "esbuild": "^0.11.20"
   }

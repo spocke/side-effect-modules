@@ -1,0 +1,7 @@
+{
+  "name": "foobar",
+  "version": "1.0.0",
+  "module": "./src/main.js",
+  "sideEffects": ["./src/effect.js"],
+  "license": "MIT"
+}
